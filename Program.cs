@@ -12,9 +12,11 @@ class Program
         // Створюємо контролер і пристрої
         ClimateController controller = new ClimateController();
         SmartRgbLight rgbLight = new SmartRgbLight();
+        SmartBlinds blind = new SmartBlinds();
 
         Console.WriteLine(" Підключаємо всі пристрої ");
         controller.Connect(rgbLight);
+        controller.Connect(blind);  
 
 
     }
