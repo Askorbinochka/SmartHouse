@@ -10,11 +10,11 @@ public class SmartAirPurifier : ISmartDevice
     {
         if (climate.AirQuality > 50)
         {
-            Console.WriteLine($" [{Name}]: Багато пилу ( {climate.AirQuality}), вмикаю очищення! ");
+            Console.WriteLine($"[{Name}]: Багато пилу ( {climate.AirQuality}), вмикаю очищення! ");
         }
         else
         {
-            Console.WriteLine($" [{Name}]: Повітря чисте, просто ароматизую лавандою ");
+            Console.WriteLine($"[{Name}]: Повітря чисте, просто ароматизую лавандою ");
         }
     }
 }

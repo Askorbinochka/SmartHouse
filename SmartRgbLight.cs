@@ -10,15 +10,15 @@ public class SmartRgbLight : ISmartDevice
     {
         if (climate.Temperature > 25)
         {
-            Console.WriteLine($"  [{Name}]: Спекотно, вмикаю синє світло ");
+            Console.WriteLine($"[{Name}]: Спекотно, вмикаю синє світло ");
         }
         else if (climate.Temperature < 18)
         {
-            Console.WriteLine($"  [{Name}]: Прохолодно, вмикаю тепле помаранчеве ");
+            Console.WriteLine($"[{Name}]: Прохолодно, вмикаю тепле помаранчеве ");
         }
         else
         {
-            Console.WriteLine($"  [{Name}]: Температура хороша, свічу білим ");
+            Console.WriteLine($"[{Name}]: Температура хороша, свічу білим ");
         }
     }
 }

@@ -9,11 +9,11 @@ public class SmartBlinds : ISmartDevice
     {
         if (climate.Temperature >= 26)
         {
-            Console.WriteLine($"  [{Name}]: На вулиці спека, закриваю жалюзі!");
+            Console.WriteLine($"[{Name}]: На вулиці спека, закриваю жалюзі!");
         }
         else
         {
-            Console.WriteLine($"  [{Name}]: Погода приємна, відкриваю жалюзі.");
+            Console.WriteLine($"[{Name}]: Погода приємна, відкриваю жалюзі.");
         }
     }
 }

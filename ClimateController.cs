@@ -21,7 +21,7 @@ public class ClimateController : IClimateController
     {
         if (_devices.Remove(device))
         {
-            Console.WriteLine($" [Контролер] Відключено: {device.Name}");
+            Console.WriteLine($"[Контролер] Відключено: {device.Name}");
         }
     }
 
@@ -38,7 +38,7 @@ public class ClimateController : IClimateController
     public void UpdateClimate(double temp, double humidity, int aqi)
     {
         CurrentClimate = new ClimateData(temp, humidity, aqi);
-        Console.WriteLine($"\n [Контролер] Нові дані: {temp}°C | {humidity}% | {aqi}");
+        Console.WriteLine($"\n[Контролер] Нові дані: {temp}°C | {humidity}% | {aqi}");
 
         // Розсилаємо оновлення всім підключеним
         NotifyDevices();
