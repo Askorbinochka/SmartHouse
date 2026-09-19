@@ -2,7 +2,7 @@
 namespace SmartHome;
 
 // Розумна підсвітка, яка змінює колір залежно від температури
-public class SmartRgbLighting : ISmartDevice
+public class SmartRgbLight : ISmartDevice
 {
     public string Name => "RGB-Підсвітка «Atmosphere»";
 
